@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание - Название школы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип школы">
+            <h1>Название школы</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О школе</a></li>
+                <li><a href="schedule.html" class="active">Расписание</a></li>
+                <li><a href="parents.html">Родителям</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="schedule">
+            <h2>Расписание уроков</h2>
+            
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab(event, 'lessons')">Расписание уроков</button>
+                <button class="tab-button" onclick="openTab(event, 'bells')">Расписание звонков</button>
+                <button class="tab-button" onclick="openTab(event, 'calendar')">Календарь мероприятий</button>
+                <button class="tab-button" onclick="openTab(event, 'documents')">Документы</button>
+            </div>
+            
+            <div id="lessons" class="tab-content active">
+                <h3>Расписание уроков</h3>
+                <div class="class-selector">
+                    <label for="class-select">Выберите класс:</label>
+                    <select id="class-select">
+                        <option value="1">1 класс</option>
+                        <option value="2">2 класс</option>
+                        <!-- Добавьте другие классы -->
+                    </select>
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>День</th>
+                            <th>1 урок</th>
+                            <th>2 урок</th>
+                            <th>3 урок</th>
+                            <th>4 урок</th>
+                            <th>5 урок</th>
+                            <th>6 урок</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Понедельник</td>
+                            <td>Математика</td>
+                            <td>Русский язык</td>
+                            <td>Литература</td>
+                            <td>Физкультура</td>
+                            <td>Иностранный язык</td>
+                            <td>-</td>
+                        </tr>
+                        <!-- Добавьте другие дни -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <div id="bells" class="tab-content">
+                <h3>Расписание звонков</h3>
+                <table>
+                    <tr>
+                        <th>Урок</th>
+                        <th>Время</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>8:30 - 9:15</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>9:25 - 10:10</td>
+                    </tr>
+                    <!-- Добавьте другие уроки -->
+                </table>
+            </div>
+            
+            <div id="calendar" class="tab-content">
+                <h3>Календарь мероприятий</h3>
+                <div class="calendar">
+                    <div class="event">
+                        <h4>1 сентября - День знаний</h4>
+                        <p>Торжественная линейка в 9:00</p>
+                    </div>
+                    <div class="event">
+                        <h4>5-10 октября - Школьные олимпиады</h4>
+                        <p>Олимпиады по основным предметам</p>
+                    </div>
+                    <!-- Добавьте другие события -->
+                </div>
+            </div>
+            
+            <div id="documents" class="tab-content">
+                <h3>Нормативные документы</h3>
+                <div class="documents-list">
+                    <div class="document">
+                        <h4>Устав школы</h4>
+                        <a href="documents/charter.pdf" download>Скачать (PDF, 1.2MB)</a>
+                    </div>
+                    <div class="document">
+                        <h4>Лицензия на образовательную деятельность</h4>
+                        <a href="documents/license.pdf" download>Скачать (PDF, 0.8MB)</a>
+                    </div>
+                    <!-- Добавьте другие документы -->
+                </div>
+                
+                <h3>Формы для скачивания</h3>
+                <div class="forms-list">
+                    <div class="form">
+                        <h4>Заявление на прием в школу</h4>
+                        <a href="documents/application.doc" download>Скачать (DOC, 45KB)</a>
+                    </div>
+                    <div class="form">
+                        <h4>Согласие на обработку персональных данных</h4>
+                        <a href="documents/consent.doc" download>Скачать (DOC, 40KB)</a>
+                    </div>
+                    <!-- Добавьте другие формы -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Такой же футер, как на главной странице -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

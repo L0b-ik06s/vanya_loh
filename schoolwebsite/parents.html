@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Родителям - Название школы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип школы">
+            <h1>Название школы</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О школе</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="parents.html" class="active">Родителям</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="parents-content">
+            <h2>Для родителей и учеников</h2>
+            
+            <article id="materials">
+                <h3>Полезные материалы</h3>
+                <div class="materials">
+                    <div class="material">
+                        <h4>Подготовка к ЕГЭ</h4>
+                        <ul>
+                            <li><a href="#">Демоверсии ЕГЭ 2023</a></li>
+                            <li><a href="#">Рекомендации по подготовке</a></li>
+                            <li><a href="#">Онлайн-тренажеры</a></li>
+                        </ul>
+                    </div>
+                    <div class="material">
+                        <h4>Учебные ресурсы</h4>
+                        <ul>
+                            <li><a href="#">Электронные учебники</a></li>
+                            <li><a href="#">Онлайн-курсы</a></li>
+                            <li><a href="#">Библиотека</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            
+            <article>
+                <h3>Советы психолога</h3>
+                <div class="advice">
+                    <h4>Как помочь ребенку с домашним заданием</h4>
+                    <p>Советы по организации рабочего места, режима дня и мотивации.</p>
+                    
+                    <h4>Адаптация к школе</h4>
+                    <p>Рекомендации для родителей первоклассников.</p>
+                    
+                    <h4>Консультации</h4>
+                    <p>Школьный психолог принимает по вторникам и четвергам с 14:00 до 17:00.</p>
+                </div>
+            </article>
+            
+            <article>
+                <h3>Советы логопеда</h3>
+                <div class="advice">
+                    <h4>Развитие речи у младших школьников</h4>
+                    <p>Упражнения и рекомендации.</p>
+                    
+                    <h4>Консультации</h4>
+                    <p>Школьный логопед принимает по понедельникам и средам с 10:00 до 13:00.</p>
+                </div>
+            </article>
+            
+            <article>
+                <h3>Школьное питание</h3>
+                <div class="nutrition">
+                    <h4>Меню на неделю</h4>
+                    <table>
+                        <tr>
+                            <th>День</th>
+                            <th>Завтрак</th>
+                            <th>Обед</th>
+                        </tr>
+                        <tr>
+                            <td>Понедельник</td>
+                            <td>Каша, бутерброд, чай</td>
+                            <td>Суп, мясо с гарниром, компот</td>
+                        </tr>
+                        <!-- Добавьте другие дни -->
+                    </table>
+                    
+                    <h4>Оплата питания</h4>
+                    <p>Оплата производится через личный кабинет на сайте или в кассе школы.</p>
+                </div>
+            </article>
+            
+            <article>
+                <h3>Безопасность</h3>
+                <div class="safety">
+                    <h4>Правила поведения в школе</h4>
+                    <ul>
+                        <li>Требования к внешнему виду</li>
+                        <li>Правила передвижения по школе</li>
+                        <li>Поведение на переменах</li>
+                    </ul>
+                    
+                    <h4>Безопасный маршрут</h4>
+                    <p>Рекомендуемые пути следования в школу и домой.</p>
+                </div>
+            </article>
+            
+            <article class="feedback">
+                <h3>Обратная связь</h3>
+                <form id="feedback-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="role">Вы:</label>
+                        <select id="role" name="role">
+                            <option value="parent">Родитель</option>
+                            <option value="student">Ученик</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Такой же футер, как на главной странице -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
